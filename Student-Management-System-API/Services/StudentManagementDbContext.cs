@@ -3,9 +3,9 @@ using Student_Management_System_API.Models;
 
 namespace Student_Management_System_API.Services
 {
-    public class StudentDbContext : DbContext
+    public class StudentManagementDbContext : DbContext
     {
-        public StudentDbContext(DbContextOptions options) : base(options)
+        public StudentManagementDbContext(DbContextOptions options) : base(options)
         {
         }
         public DbSet<Student> Students { get; set; }
